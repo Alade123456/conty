@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Manrope', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .font-editorial-quote {
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+  }
+
+  .role-pill input:checked + label {
+    background-color: #151515;
+    color: #faf9f4;
+    border-color: #151515;
+  }
+  .role-pill input:checked + label .badge-dot {
+    background-color: #c7f236;
+  }
+}
